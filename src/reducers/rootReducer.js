@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-//import other reducers
+import { quote } from './quote';
 
 export const rootReducer = combineReducers({
-
+  quote
 });
