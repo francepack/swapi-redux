@@ -11,7 +11,7 @@ describe('actions', () => {
     expect(result).toEqual(expected);
   })
 
-  it('should return a type SET_PEOPLE with people objects', => {
+  it('should return a type SET_PEOPLE with people objects', () => {
     const people = [{name: 'Luke'}, {name: 'Leia'}, {name: 'Han'}];
     const expected = {
       type: 'SET_PEOPLE',
@@ -21,7 +21,7 @@ describe('actions', () => {
     expect(result).toEqual(expected);
   })
 
-  it('should return a type SET_PLANETS with planet objects', => {
+  it('should return a type SET_PLANETS with planet objects', () => {
     const planets = [{name: 'Tatooine'}, {name: 'Earth'}, {name: 'Hoth'}];
     const expected = {
       type: 'SET_PLANETS',
@@ -31,7 +31,7 @@ describe('actions', () => {
     expect(result).toEqual(expected);
   })
   
-  it('should return a type SET_VEHICLES with vehicle objects', => {
+  it('should return a type SET_VEHICLES with vehicle objects', () => {
     const vehicles = [{name: 'ATT'}, {name: 'X-wing'}, {name: 'Star Destroyer'}];
     const expected = {
       type: 'SET_VEHICLES',
