@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="card-content"
+      >
+        <header>
+          <h2 />
+          <div>
+            <div
+              className="star"
+            >
+              <img
+                alt="inactive-star"
+                src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+              />
+            </div>
+          </div>
+        </header>
+        <article />
+      </div>,
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header>
+            <h2 />
+            <div>
+              <div
+                className="star"
+              >
+                <img
+                  alt="inactive-star"
+                  src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                />
+              </div>
+            </div>
+          </header>,
+          <article />,
+        ],
+        "className": "card-content",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2 />,
+              <div>
+                <div
+                  className="star"
+                >
+                  <img
+                    alt="inactive-star"
+                    src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                  />
+                </div>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="star"
+                >
+                  <img
+                    alt="inactive-star"
+                    src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                  />
+                </div>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    undefined,
+                    <img
+                      alt="inactive-star"
+                      src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                    />,
+                  ],
+                  "className": "star",
+                  "onClick": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "inactive-star",
+                      "src": "https://img.icons8.com/windows/32/0F3D56/filled-star.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card-content"
+        >
+          <header>
+            <h2 />
+            <div>
+              <div
+                className="star"
+              >
+                <img
+                  alt="inactive-star"
+                  src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                />
+              </div>
+            </div>
+          </header>
+          <article />
+        </div>,
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <header>
+              <h2 />
+              <div>
+                <div
+                  className="star"
+                >
+                  <img
+                    alt="inactive-star"
+                    src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                  />
+                </div>
+              </div>
+            </header>,
+            <article />,
+          ],
+          "className": "card-content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2 />,
+                <div>
+                  <div
+                    className="star"
+                  >
+                    <img
+                      alt="inactive-star"
+                      src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                    />
+                  </div>
+                </div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="star"
+                  >
+                    <img
+                      alt="inactive-star"
+                      src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                    />
+                  </div>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      undefined,
+                      <img
+                        alt="inactive-star"
+                        src="https://img.icons8.com/windows/32/0F3D56/filled-star.png"
+                      />,
+                    ],
+                    "className": "star",
+                    "onClick": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "inactive-star",
+                        "src": "https://img.icons8.com/windows/32/0F3D56/filled-star.png",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "header",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+            ],
+            "type": "article",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

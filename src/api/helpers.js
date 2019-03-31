@@ -17,7 +17,7 @@ export const constructPeople = async (people) => {
     })
     return peopleObj
   } catch(error) {
-
+    return error
   }
   
 }
@@ -39,7 +39,7 @@ export const constructPlanets = async (planets) => {
     })
     return planetsObj;
   } catch(error) {
-
+    return error
   }
 
 }

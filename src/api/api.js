@@ -1,9 +1,9 @@
-export const makeFetch = (url) => {
-  return fetch(url)
-    .then(response => {
-      if(!response.ok) {
-        throw new Error('No response')  
-      }
-      return response.json()
-    })
-  }
+export const makeFetch = async (url) => {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data
+  } catch(error) {
+    return error
+  } 
+}
