@@ -14,10 +14,7 @@ export class CardBox extends Component {
   }
   
   render() {
-  
     const { id } = this.props;
-
-
     switch (id) {
       case 'home':
         return (<p className='display-text'>Select Above to View</p>)
@@ -26,24 +23,33 @@ export class CardBox extends Component {
         return
 
       case 'people':
-        return <div className='card-box'>{this.props.people.map(person => ( <Card {...person} /> ))}</div>
+        return( 
+          <div className='card-box'>
+            {this.props.people.map(person => ( <Card {...person} /> ))}
+          </div>)
       
       case 'planets':
-        return (this.props.planets.map(planet => ( <Card {...planet} /> )))
+        return( 
+          <div className='card-box'>
+            {this.props.planets.map(planet => ( <Card {...planet} /> ))}
+          </div>)
       
       case 'vehicles':
-        return (this.props.vehicles.map(vehicle => ( <Card {...vehicle} /> )))
+        return( 
+          <div className='card-box'>
+            {this.props.vehicles.map(vehicle => ( <Card {...vehicle} /> ))}
+          </div>)
       
       default:
         return (<p className='display-text'>Select Above to View</p>)
     }
   }
 }
+
 export const mapStateToProps = (state) => ({
   people: state.people,
   planets: state.planets,
   vehicles: state.vehicles
-
 })
 
 // CardContainer.propTypes = {
