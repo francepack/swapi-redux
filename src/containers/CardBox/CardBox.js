@@ -26,7 +26,7 @@ export class CardBox extends Component {
         return
 
       case 'people':
-        return (this.props.people.map(person => ( <Card {...person} /> )))
+        return <div className='card-box'>{this.props.people.map(person => ( <Card {...person} /> ))}</div>
       
       case 'planets':
         return (this.props.planets.map(planet => ( <Card {...planet} /> )))

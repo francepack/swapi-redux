@@ -15,55 +15,54 @@ const Card = (props) => {
   </div>  
 
   renderCard =
-    <div>I'm a card</div>
-    // <div className='card-content'>
-    //   <header>
-    //     <h2>{props.name}</h2>
-    //     <div>{star}</div>
-    //   </header>
-    //   <article>
-    //     {props.species && 
-    //       <p>Species: <span>{props.species}</span></p>
-    //     }
-    //     {props.homeworld && 
-    //       <p>Home: <span>{props.homeworld}</span></p>
-    //     }
-    //     {props.population && 
-    //       <p>Home pop: <span>{props.population}</span></p>
-    //     }
-    //     {props.terrain && 
-    //       <p>Terrain: <span>{props.terrain}</span></p>
-    //     }
-    //     {props.climate && 
-    //       <p>Climate: <span>{props.climate}</span></p>
-    //     }
-    //     {props.model && 
-    //       <p>Model: <span>{props.model}</span></p>
-    //     }
-    //     {props.class && 
-    //       <p>Class: <span>{props.class}</span></p>
-    //     }
-    //     {props.passengers && 
-    //       <p>Passengers: <span>{props.passengers} people</span></p>
-    //     }
-    //     {props.residents && 
-    //       <div>
-    //         <p className="resident-head">Residents of Note</p>
-    //         <ul>
-    //           {!props.residents.length && 
-    //             <li>None</li>
-    //           }
-    //           {props.residents.map(resident => {
-    //             return <li key={resident}>{resident}</li>
-    //           })}
-    //         </ul>
-    //       </div>
-    //     }
-    //   </article>
-    // </div>
+    <div className='card-content'>
+      <header>
+        <h2>{props.name}</h2>
+        <div>{star}</div>
+      </header>
+      <article>
+        {props.species && 
+          <p>Species: <span>{props.species}</span></p>
+        }
+        {props.homeworld && 
+          <p>Home: <span>{props.homeworld}</span></p>
+        }
+        {props.population && 
+          <p>Home pop: <span>{props.population}</span></p>
+        }
+        {props.terrain && 
+          <p>Terrain: <span>{props.terrain}</span></p>
+        }
+        {props.climate && 
+          <p>Climate: <span>{props.climate}</span></p>
+        }
+        {props.model && 
+          <p>Model: <span>{props.model}</span></p>
+        }
+        {props.class && 
+          <p>Class: <span>{props.class}</span></p>
+        }
+        {props.passengers && 
+          <p>Passengers: <span>{props.passengers} people</span></p>
+        }
+        {props.residents && 
+          <div>
+            <p className="resident-head">Residents of Note</p>
+            <ul>
+              {!props.residents.length && 
+                <li>None</li>
+              }
+              {props.residents.map(resident => {
+                return <li key={resident}>{resident}</li>
+              })}
+            </ul>
+          </div>
+        }
+      </article>
+    </div>
 
   return(
-    <div className='card-box'>
+    <div className='card'>
       {renderCard} 
     </div>
   )
