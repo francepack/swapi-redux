@@ -1,0 +1,32 @@
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-container button {
+  background-color: $brownTan;
+  border: 0;
+  border-radius: 15px;
+  color: $midnightGreen;
+  font-weight: 700;
+  height: 35px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  width: 140px;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: $taupe;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $taupe;
+  }
+  &:focus {
+    background-color: $taupe;
+    color: $Gold;
+  }
+  //  buttons;
+}
