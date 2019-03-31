@@ -6,9 +6,15 @@ const Control = (props) => {
   // const { getPeople, getPlanets, getVehicles } = props
   return(
     <div className='btn-container'>
-      <button >People</button>
-      <button >Planets</button>
-      <button >Vehicles</button>
+      <Link to='/people' className='people-direct'>
+        <button >People</button>
+      </Link>
+      <Link to='/planets' className='planets-direct'>
+        <button >Planets</button>
+      </Link>
+      <Link to='/vehicles' className='vehicles-direct'>
+        <button >Vehicles</button>
+      </Link>
     </div>
   )
 }

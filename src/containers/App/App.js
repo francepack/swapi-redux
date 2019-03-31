@@ -59,9 +59,9 @@ export class App extends Component {
   }
 
   fetchVehicles = async () => {
-    const vehiclesUrl = 'https://swapi.co/api/vehicles'
+    const vehiclesUrl = 'https://swapi.co/api/vehicles';
     try {
-      const vehicleData = await makeFetch(vehiclesUrl)
+      const vehicleData = await makeFetch(vehiclesUrl);
       const vehicles =  await constructVehicles(vehicleData);
       await this.props.setVehicles(vehicles)
     } catch(error) {

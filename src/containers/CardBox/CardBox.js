@@ -1,29 +1,50 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux';
 import Card from '../Card/Card'
 import PropTypes from 'prop-types'
+import { constructPeople } from '../../api/helpers';
 
 
 
-const CardBox = (props) => {
+export class CardBox extends Component {
   // const cards = props.data.map(item => (<Card key={item.name} toggleFav={props.toggleFav} {...item} />))
-  const { id } = props;
-
-  switch (id) {
-    case 'home':
-      return (
-        <p className='display-text'>Select Above to View</p>
-      )
-    case 'favorites':
-    case 'people':
-    case 'planets':
-    case 'vehicles':
-    default:
-      return (
-        <p className='display-text'>Select Above to View</p>
-      )
+  constructor(props) {
+    super(props);
+    this.state = {}
   }
   
+  render() {
+  
+    const { id } = this.props;
+
+
+    switch (id) {
+      case 'home':
+        return (<p className='display-text'>Select Above to View</p>)
+      
+      case 'favorites':
+        return
+
+      case 'people':
+        return (this.props.people.map(person => ( <Card {...person} /> )))
+      
+      case 'planets':
+        return (this.props.planets.map(planet => ( <Card {...planet} /> )))
+      
+      case 'vehicles':
+        return (this.props.vehicles.map(vehicle => ( <Card {...vehicle} /> )))
+      
+      default:
+        return (<p className='display-text'>Select Above to View</p>)
+    }
+  }
 }
+export const mapStateToProps = (state) => ({
+  people: state.people,
+  planets: state.planets,
+  vehicles: state.vehicles
+
+})
 
 // CardContainer.propTypes = {
 //   data: PropTypes.array.isRequired,
@@ -31,4 +52,4 @@ const CardBox = (props) => {
 // }
 
 
-export default CardBox;
+export default connect(mapStateToProps, null)(CardBox);
