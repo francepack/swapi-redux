@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Card from '../Card/Card'
 import PropTypes from 'prop-types'
-import { constructPeople } from '../../api/helpers';
 
 
 
@@ -52,10 +51,12 @@ export const mapStateToProps = (state) => ({
   vehicles: state.vehicles
 })
 
-// CardContainer.propTypes = {
-//   data: PropTypes.array.isRequired,
-//   toggleFav: PropTypes.func.isRequired
-// }
+CardBox.propTypes = {
+  id: PropTypes.string.isRequired,
+  people: PropTypes.array,
+  planets: PropTypes.array,
+  vehicles: PropTypes.array
+}
 
 
 export default connect(mapStateToProps, null)(CardBox);

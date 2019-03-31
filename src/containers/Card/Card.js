@@ -7,10 +7,10 @@ const Card = (props) => {
   star =
   <div className='star' onClick={props.toggleFav}>
     {props.favorite &&
-      <img src="https://img.icons8.com/windows/32/FCB001/filled-star.png" />
+      <img src="https://img.icons8.com/windows/32/FCB001/filled-star.png" alt='active-star' />
     }
     {!props.favorite &&
-      <img src="https://img.icons8.com/windows/32/0F3D56/filled-star.png" />
+      <img src="https://img.icons8.com/windows/32/0F3D56/filled-star.png" alt='inactive-star' />
     }
   </div>  
 
@@ -70,7 +70,9 @@ const Card = (props) => {
 
 
 Card.propTypes = {
-  
+  person: PropTypes.object,
+  planet: PropTypes.object,
+  vehicle: PropTypes.object
 }
 
 export default Card

@@ -11,7 +11,8 @@ export const constructPeople = async (people) => {
         species: person.species, 
         homeworld: person.homeworld, 
         population: person.population, 
-        id: Date.now()
+        id: Date.now(),
+        key: person.name
       }
     })
     return peopleObj
@@ -32,7 +33,8 @@ export const constructPlanets = async (planets) => {
         population: planet.population, 
         climate: planet.climate, 
         residents: planet.residents,  
-        id: Date.now()
+        id: Date.now(),
+        key: planet.name
       }
     })
     return planetsObj;
@@ -50,7 +52,8 @@ export const constructVehicles = (vehicles) => {
       model: vehicle.model, 
       class: vehicle.vehicle_class, 
       passengers: vehicle.passengers, 
-      id: Date.now()
+      id: Date.now(),
+      key: vehicle.name
     }
   })
   return vehicleObj;

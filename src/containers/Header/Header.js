@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const Header = () => {
 
@@ -9,7 +9,9 @@ const Header = () => {
       <Link to='/' className='home-direct'>
         <h1><span>SWAPI</span> - box</h1>
       </Link>
-      <button className='display-fav'>View <span>0</span> Favorites </button>
+      {/* <Link to='/favorites' className='favorites-direct'> */}
+        <button className='display-fav'>View <span>0</span> Favorites </button>
+      {/* </Link> */}
     </header>
   )
 }
@@ -18,4 +20,4 @@ const Header = () => {
 //   viewFavorites: PropTypes.func.isRequired,
 //   favCount: PropTypes.number.isRequired
 // }
-export default Header
+export default Header;

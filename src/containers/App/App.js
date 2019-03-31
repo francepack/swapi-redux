@@ -120,4 +120,12 @@ export const mapDispatchToProps = (dispatch) => ({
   setVehicles: (vehicles) => dispatch(setVehicles(vehicles))
 })
 
+App.propTypes = {
+  quote: PropTypes.object,
+  pickRandomCrawl: PropTypes.func.isRequired,
+  setPeople: PropTypes.func.isRequired,
+  setPlanets: PropTypes.func.isRequired,
+  setVehicles: PropTypes.func.isRequired
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
