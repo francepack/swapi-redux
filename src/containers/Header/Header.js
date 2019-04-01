@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 
 const Header = () => {
 
@@ -16,8 +15,4 @@ const Header = () => {
   )
 }
 
-// Header.propTypes = {
-//   viewFavorites: PropTypes.func.isRequired,
-//   favCount: PropTypes.number.isRequired
-// }
 export default Header;
