@@ -2,7 +2,7 @@
 Find information about Star Wars characters, vehicles, and planets using Swapi-Box!
 
 ## Screenshots
-<img width="1223" alt="Screen Shot 2019-05-09 at 10 56 06 PM" src="https://user-images.githubusercontent.com/44355328/57503548-cb771b00-72ad-11e9-8032-0f9380ff0fa2.png">
+<img width="1212" alt="Screen Shot 2019-05-09 at 11 05 03 PM" src="https://user-images.githubusercontent.com/44355328/57503815-1c3b4380-72af-11e9-92b4-4be6bb841b3e.png">
 
 ## Technologies and learning Goals
 This project uses react/redux, react-router, and SASS. It also makes fetch calls to an API.
