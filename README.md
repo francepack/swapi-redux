@@ -1,7 +1,7 @@
 # Swapi-Redux
 Find information about Star Wars characters, vehicles, and planets using Swapi-Box! This app presents a random opening crawl of a star wars film and allows the user to pick whether they want to see various people, planets, or vehicles.
 
-## Screenshots
+## Screenshot
 <img width="1212" alt="Screen Shot 2019-05-09 at 11 05 03 PM" src="https://user-images.githubusercontent.com/44355328/57503815-1c3b4380-72af-11e9-92b4-4be6bb841b3e.png">
 
 ## Technologies
